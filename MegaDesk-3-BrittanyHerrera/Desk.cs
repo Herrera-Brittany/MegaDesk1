@@ -21,5 +21,10 @@ namespace MegaDesk_3_BrittanyHerrera
         public const int MAXWIDTH = 96;
         public const int MINDEPTH = 12;
         public const int MAXDEPTH = 56;
+
+        internal class RushDays
+        {
+            public static string Text { get; internal set; }
+        }
     }
 }

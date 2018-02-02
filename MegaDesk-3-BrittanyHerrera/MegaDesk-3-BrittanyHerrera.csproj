@@ -49,6 +49,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,8 +68,15 @@
     <Compile Include="AddQuote.Designer.cs">
       <DependentUpon>AddQuote.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddQuotes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddQuotes2.Designer.cs">
+      <DependentUpon>AddQuotes2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Desk.cs" />
     <Compile Include="DeskQuote.cs" />
+    <Compile Include="DesktopMaterial.cs" />
     <Compile Include="DisplayQuote.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +97,12 @@
     <Compile Include="SearchQuotes.Designer.cs">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThankYou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThankYou.Designer.cs">
+      <DependentUpon>ThankYou.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAllQuotes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="AddQuote.resx">
       <DependentUpon>AddQuote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddQuotes2.resx">
+      <DependentUpon>AddQuotes2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayQuote.resx">
       <DependentUpon>DisplayQuote.cs</DependentUpon>
@@ -115,6 +133,12 @@
     </Compile>
     <EmbeddedResource Include="SearchQuotes.resx">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThankYou.resx">
+      <DependentUpon>ThankYou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllQuotes.resx">
+      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -146,6 +170,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\731px-Nuvola_desk_4_svg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
